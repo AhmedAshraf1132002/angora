@@ -1,0 +1,626 @@
+:root {
+  --maincolor: #343434;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-padding-top: 20px;
+}
+a {
+  color: #fff;
+}
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+/*<nav>*/
+
+.navbar-nav .nav-link.active {
+  position: relative;
+}
+.navbar-nav .nav-link.active::after {
+  content: "";
+  width: 80%;
+  height: 3px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #000;
+}
+/*<nav/>*/
+/*<Home>*/
+.Home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../first_exam_photos/bg.jpg);
+  background-attachment: fixed;
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.Home .container h5 {
+  font-weight: 900;
+  font-size: 50px;
+}
+.Home .container ul li {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Home .container ul li i {
+  font-size: 14px;
+}
+.Home .container h1 {
+  font-size: 4rem;
+  font-weight: 200;
+}
+.Home .container h1::after {
+  content: "";
+  animation: header-animation 6s 1s infinite;
+}
+
+@keyframes header-animation {
+  0% {
+    content: "|";
+  }
+  3% {
+    content: "La|";
+  }
+  5% {
+    content: "Lar|";
+  }
+  7% {
+    content: "Larr|";
+  }
+  10% {
+    content: "Larry |";
+  }
+  13% {
+    content: "Larry D|";
+  }
+  15% {
+    content: "Larry Da|";
+  }
+  17% {
+    content: "Larry Dan|";
+  }
+  20% {
+    content: "Larry Dani|";
+  }
+  24% {
+    content: "Larry Danie|";
+  }
+  25% {
+    content: "Larry Daniel|";
+  }
+  27% {
+    content: "Larry Daniels|";
+  }
+  30% {
+    content: "Larry Daniels|";
+  }
+  32% {
+    content: "Larry Daniel|";
+  }
+  35% {
+    content: "Larry Danie|";
+  }
+  37% {
+    content: "Larry Dani|";
+  }
+  40% {
+    content: "Larry Dan|";
+  }
+  42% {
+    content: "Larry Da|";
+  }
+  45% {
+    content: "Larry D|";
+  }
+  47% {
+    content: "Larry |";
+  }
+  50% {
+    content: "De|";
+  }
+  52% {
+    content: "Des|";
+  }
+  55% {
+    content: "Desi|";
+  }
+  57% {
+    content: "Desig|";
+  }
+  60% {
+    content: "Design|";
+  }
+  62% {
+    content: "Designe|";
+  }
+  65% {
+    content: "Designer|";
+  }
+  67% {
+    content: "Designer|";
+  }
+  70% {
+    content: "Designe|";
+  }
+  72% {
+    content: "Design|";
+  }
+  75% {
+    content: "Desig|";
+  }
+  77% {
+    content: "Desi|";
+  }
+  80% {
+    content: "Des|";
+  }
+  82% {
+    content: "De|";
+  }
+  85% {
+    content: "Dev|";
+  }
+  87% {
+    content: "Deve|";
+  }
+  90% {
+    content: "Devel|";
+  }
+  92% {
+    content: "Develo|";
+  }
+  95% {
+    content: "Develop|";
+  }
+  97% {
+    content: "Develope|";
+  }
+  100% {
+    content: "Developer|";
+  }
+}
+
+/*<Home/>*/
+/*<About/>*/
+.About .container .left {
+  width: 460px;
+  height: 498px;
+}
+.About .container .left::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 0%;
+  bottom: -40px;
+  background-image: url(../first_exam_photos/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+.About .container .right h3 {
+  font-weight: 900;
+}
+.About .container .right p {
+  line-height: 25px;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 570px;
+  height: 120px;
+}
+.About .container .right .text {
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.About .container .right .skills .item .skills-progress {
+  width: 100%;
+
+  border-radius: 5px;
+  background: #f7f7f7;
+  box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.About .container .right .skills .item .skills-progress h6 {
+  font-size: 13px;
+  color: #fff;
+  position: relative;
+  z-index: 5;
+  top: 5px;
+  bottom: 0;
+}
+
+.About .container .right .skills .skills-progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  transition: all 1s;
+}
+.About .container .right .skills .skills-progress span:after {
+  content: "95%";
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  font-size: 11px;
+  color: #fff;
+}
+.About .container .right .skills .skills-progress .black-bar-two:after {
+  content: "80%";
+}
+.About .container .right .skills .skills-progress .black-bar-three:after {
+  content: "90%";
+}
+
+.About .container .right .btn-one {
+  border: 1px solid #000;
+  background-color: #000;
+  transition: all 0.5s;
+  color: #fff;
+  padding: 7px 30px;
+}
+.About .container .right .btn-one:hover {
+  background-color: #fff;
+  color: #000;
+}
+.About .container .right .btn-two {
+  border: 1px solid #000;
+  transition: all 0.5s;
+  padding: 7px 30px;
+}
+.About .container .right .btn-two:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/*<About/>*/
+/*<Services>*/
+.container .title h3 {
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  z-index: 4;
+}
+.container .title h3::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-image: url(../first_exam_photos/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+.Services .container .content {
+  width: 360px;
+  height: 292px;
+  padding: 40px 0px 25px 0px;
+  box-shadow: 2px 6px 30px -8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.Services .container .content:hover .icon {
+  background-color: #000;
+  color: #fff;
+}
+.Services .container .content .icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  transition: all 0.5s;
+}
+.Services .container .content h6 {
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 18px;
+}
+.Services .container .content p {
+  word-spacing: 2px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #748182;
+  width: 280px;
+  height: 68px;
+}
+
+/*<Services/>*/
+/*<portfolio>*/
+.Works .container .item-img {
+  width: 360px;
+}
+.Works .container .item-img .layer {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  transition: all 0.5s;
+  border: 5px solid #808080d6;
+}
+.Works .container .item-img:hover .layer {
+  opacity: 0.9;
+}
+.Works .container .item-img .layer .icon-layer {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all 0.5s;
+}
+.Works .container .item-img:hover .icon-layer {
+  top: 43%;
+}
+.Works .container .item-img .layer .icon-layer .icon-link {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.Works .container .item-img .layer .text-layer {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all 0.5s;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.Works .container .item-img:hover .text-layer {
+  top: 40%;
+}
+
+.Works .container .item-img .layer .icon-link:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.Works .container .item-img .layer .icon-link i {
+  transition: all 0.5s;
+}
+.Works .container .item-img .layer .icon-link:hover i {
+  color: #000;
+}
+
+.nav-tabs .nav-link.active {
+  color: #000;
+  font-weight: 700;
+  border: 0;
+  position: relative;
+}
+.nav-tabs .nav-link.active::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 3px;
+  background-color: #000;
+  top: 90%;
+  left: 15%;
+  transition: all 0.5s;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: 700;
+}
+.nav-link:hover {
+  color: #000;
+}
+
+.nav-tabs .nav-link:focus .nav-tabs .nav-link:hover {
+  border-color: #fff;
+}
+.nav-tabs {
+  --bs-nav-tabs-border-width: none;
+  justify-content: center;
+  margin: 50px 0 30px 0;
+}
+
+/*<portfolio/>*/
+/*<Testimonials>*/
+
+.Clients .container .Testimonials .Testimonials-img {
+  width: 90px;
+  height: 90px;
+}
+.Clients .container .Testimonials p {
+  word-spacing: 2px;
+  font-size: 15px;
+  color: #748182;
+}
+.Clients .container .Testimonials h6 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 15px 0 5px;
+}
+.Clients .container .Testimonials span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 50px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #888;
+}
+
+/*<Testimonials/>*/
+/*<numbers>*/
+.numbers .container .box .box-icon {
+  font-size: 30px;
+}
+.numbers .box h3 {
+  font-weight: 900;
+  margin-bottom: 15px;
+  font-size: 30px;
+  padding-top: 10px;
+}
+.numbers .box p {
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 15px;
+  color: #748182;
+}
+
+/*<numbers/>*/
+/*<Team>*/
+.Team .container .item {
+  background-color: rgba(52, 52, 52, 0.8);
+  width: 360px;
+  height: 483px;
+}
+.Team .container .item .img-text {
+  height: 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Team .container .item .img-text h4 {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0 0 5px;
+}
+.Team .container .item .img-text h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.Team .container .item .item-img img {
+  transition: all 0.5s;
+}
+.Team .container .item .item-img .layer-team {
+  width: 195px;
+  height: 184px;
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: rotateY(180deg) scale(0.5, 0.5);
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.Team .container .item .item-img:hover .layer-team {
+  transform: rotateY(360deg);
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+.Team .container .item .item-img:hover img {
+  transform: scale(1.2);
+}
+.Team .container .item .item-img .layer-team .social-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.Team .container .item .item-img .layer-team .social-icons ul li {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Team .container .item .item-img .layer-team .social-icons ul li:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.Team .container .item .item-img .layer-team .social-icons ul li:hover i {
+  color: #000;
+}
+
+/*<Team/>*/
+/*<Contact>*/
+.Contact .container .full-content .Contact-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.Contact .container .full-content h6 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.Contact .container .full-content p {
+  font-size: 15px;
+  color: #748182;
+}
+.Contact .container .full-content:hover .Contact-icon {
+  background-color: #000;
+}
+.Contact .container .full-content:hover i {
+  color: #fff;
+}
+.Contact .container form .first-second input {
+  background: #f4f4f4;
+  width: 48%;
+}
+.Contact .container form textarea {
+  background: #f4f4f4;
+}
+.Contact .container form .btn-form {
+  background-color: #000;
+  color: #fff;
+}
+.Contact .container form .btn-form:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid#000;
+}
+.form-control:focus {
+  border-color: #fff transparent;
+  box-shadow: 0 0 0 0;
+}
+/*<Contact/>*/
+/*<footer>*/
+.container .last-section p {
+  font-size: 13px;
+  word-spacing: 2px;
+  color: #748182;
+}
+footer {
+  background: #1c1c1c;
+  padding: 30px;
+}
+
+/*<footer/>*/
